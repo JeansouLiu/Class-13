@@ -1,27 +1,27 @@
 <?php
 
 /********************************************
- * 使用方法:
+ * How to use:
  * 
- * 1、将本段代码保存为 jiami.php
+ * 1、If this file is named jiami.php
  * 
- * 2、在要加密的页面前面引入这个 php 文件   
+ * 2、in the encrypted page   
  *  require_once('jiami.php');
  * 
- * 3、设置页面访问密码 
- *  MkEncrypt('页面密码');
+ * 3、set the password 
+ *  MkEncrypt('password');
  * 
 ********************************************/
 
-// 密码 Cookie 加密盐
+// Password cookie encryption salt
 if(!defined('MK_ENCRYPT_SALT'))
     define('MK_ENCRYPT_SALT', 'Kgs$JC!V');
 
 /**
- * 设置访问密码
+ * set password
  * 
- * @param $password  访问密码
- * @param $pageid    页面唯一 ID 值，用于区分同一网站的不同加密页面
+ * @param $password  password
+ * @param $pageid    pageid
  */
 function MkEncrypt($password, $pageid = 'default') {
     $pageid     = md5($pageid);
@@ -29,9 +29,9 @@ function MkEncrypt($password, $pageid = 'default') {
     $postpwd    = isset($_POST['pagepwd']) ? addslashes(trim($_POST['pagepwd'])) : '';
     $cookiepwd  = isset($_COOKIE['mk_encrypt_'.$pageid]) ? addslashes(trim($_COOKIE['mk_encrypt_'.$pageid])) : '';
     
-    if($cookiepwd == $md5pw) return;    // Cookie密码验证正确
+    if($cookiepwd == $md5pw) return;    // Cookie password is true
     
-    if($postpwd == $password) {         // 提交的密码正确
+    if($postpwd == $password) {         // the password is right
         setcookie('mk_encrypt_' . $pageid, $md5pw, time() + 3600000, '/');
         return;
     }

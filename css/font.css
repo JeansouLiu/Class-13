@@ -1,0 +1,5 @@
+@font-face{
+	font-family: "Minecraft";
+	src: url("../fonts/MINECRAFT.TTF") format("truetype");
+	font-display: swap;
+}

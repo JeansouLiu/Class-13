@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Class 13 Event Recorder</title>
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/loader.css"><link rel="stylesheet" href="css/font.css">
+  <meta name="author" content="Jeansou">
+  <meta name="description" content="Timeline of Class 13">
+  <meta name="keywords" content="Timeline, Class13, DongfengHighSchool, 东风高级中学, 东高, 东风高中, 2019级, 13班">
+  <meta charset="UTF-8">
+</head>
+<body>
+<div style="position: fixed; left: 0px; right:0px; top: 0px; bottom: 0px; z-index: -1"><video style="object-fit:fill; width: 100%; height: 100%" src="videos/bg.mp4" muted autoplay loop control="false"></video></div>
+<!--Loader-->
+<script>
+		document.onreadystatechange=function(){
+			  if(document.readyState=="complete"){
+				  $("#loader").fadeOut();
+			  }
+		  }
+		document.addEventListener('pjax:send', function (){
+		document.getElementById("loader").style.display='block';
+		});
+		document.addEventListener('pjax:complete', function (){
+		document.getElementById("loader").style.display='none';
+		});
+</script>
+<!--Content-->
+<div id="content" onMouseMove="bgs.play()" class="content">
+<!--Header-->
+  <div class="header">
+  <h1 class="header__title" style="color: white">Event List</h1>
+  <div class="header__btns btns"><a target="_blank" style="color: white" class="header__btn btn" href="https://github.com/JeansouLiu/Timeline-of-Class-13" title="Give a star">Give Me A Star on GitHub</a></div>
+  <audio id="bg" src="sounds/bg.mp3" loop control="false"></audio>
+  <script>
+	var bgs = document.getElementById("bg");
+  </script>
+  </div>
+  <!--content title-->
+  <h2 class="content__title" style="color: white">Last update: 2020/5/1</h2>
+  <!--content inner-->
+  <div class="content__inner">
+    <div class="timeline">
+      <!--timeline bar-->
+      <div class="timeline__bar"></div>
+      <!--timeline element-->
+      <div class="timeline__elem timeline__elem--left">
+        <!--timeline element date-->
+        <div class="timeline__date"><span class="timeline__date-day">8</span><span class="timeline__date-month">Mar</span></div>
+        <!--timeline event-->
+        <div class="timeline__event">
+          <!--timeline event full date and time-->
+          <div class="timeline__event-date-time">
+            <div class="timeline__event-date"> <span>08/03/2020</span></div>
+            <div class="timeline__event-time"><span>10:00</span></div>
+          </div>
+          <!--timeline event title-->
+          <h4 class="timeline__event-title">Class Meeting by Group 3</h4>
+          <!--timeline event descrtiption-->
+          <div class="timeline__event-descr">
+            <p>wait for images</p>
+          </div>
+          <!--timeline event actions links-->
+          <div class="timeline__event-actions"><a class="timeline__event-action" style="cursor: pointer" onclick="location.href='content/2020-03-08'" title="Read More">Read More </a></div>
+        </div>
+      </div>
+      <!--template tip-->
+      <div style="display: none" class="timeline__elem timeline__elem--right">
+        <!--timeline element date-->
+        <div class="timeline__date"><span class="timeline__date-day">18</span><span class="timeline__date-month">Jul</span></div>
+        <!--timeline event-->
+        <div class="timeline__event">
+          <!--timeline event full date and time-->
+          <div class="timeline__event-date-time">
+            <div class="timeline__event-date"> <span>18/07/2019</span></div>
+            <div class="timeline__event-time"><span>12:30</span></div>
+          </div>
+          <!--timeline event title-->
+          <h4 class="timeline__event-title">CSS Con</h4>
+          <!--timeline event descrtiption-->
+          <div class="timeline__event-descr">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+          </div>
+          <!--timeline event actions links-->
+          <div class="timeline__event-actions"><a class="timeline__event-action" href="#" title="Learn More">Learn More </a><a class="timeline__event-action" href="#" title="Contact Us">Contact Us</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="loader" style="background-color: black; z-index: 8000; position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px">
+	<div id="logo" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; z-index: 8001; font-size: 64px">
+	Class Thirteen Timeline
+		<style type="text/css">
+			#logo {
+				animation: change 2s linear 0s infinite;
+			}
+			
+			@keyframes change {
+				0% {
+					color: #fff;
+				}
+				50% {
+					color: #000;
+				}
+				100% {
+					color: #fff;
+				}
+			}
+		</style>
+	</div>
+	<div style="position: fixed; bottom: 10%; left: 50%; transform: translate(-50%, -50%)"><img src="images/loader.gif"></div>
+	<div class="waittext" style="position: fixed; bottom: 5%; left: 45.5%; transform: translate(-50%, -50%); font-size: 32px; color: white">Please wait</div>
+</div>
+<!-- partial -->
+  <script src="js/script.js"></script>
+  <script src="js/pjax.js"></script>
+  <script>
+  var pjax = new Pjax({
+  selectors: [
+    "title",
+    "content",
+  ],
+  cacheBust: false
+  })
+  </script>
+<footer style="color: aliceblue"><div style="position: fixed; bottom: 0; left: 0">Copyright &copy; 2020 <a target="_blank" href="https://blog.jeansou.com">Jeansou</a> and his classmates</div><div style="position: fixed; bottom:0; right: 0"><a target="_blank" href="https://github.com/JeansouLiu/Timeline-of-Class-13">GitHub</a> | GitLab | Coding | Gitee</div></footer>
+</body>
+</html>

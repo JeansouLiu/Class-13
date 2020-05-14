@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2020-03-08</title>
+<meta name="author" content="Jeansou">
+<script src="../../js/pjax.js"></script>
+<link rel="stylesheet" href="css/font.css">
+<script src="js/fullscreen.js"></script>
+<script src="js/menu.js"></script>
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/transition.css">
+</head>
+
+<body>
+<div class="content">
+<a onclick="document.getElementById('bgs').play();" style="cursor: default" href="i7.html">
+<div style="position: fixed; z-index: -1; top: 0; left: 0; right: 0; bottom: 0"><img oncontextmenu="return false;" ondragstart="return false;" height=100% width=100% src="images/i6.svg" /></div>
+<div style="position: fixed; top: 1%; left: 1%; font-family: 'Product Sans'; font-size: 3vw; color: black">Something about <font style="font-family: 'Product Sans Italic'">women</font></div>
+<div style="position: fixed; top: 50%; left: 1%; height: 68vh; width: 68vw; transform:translate(0, -50%)"><iframe height="100%" width="100%" src="//player.bilibili.com/player.html?aid=667918786&bvid=BV1Ya4y147q7&cid=185602811&page=1&high_quality=1&danmaku=0&autoplay=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+</a>
+</div>
+<!--Menu-->
+<div class="menu" style="z-index: 9001; background-color: white; color: #3a3a38" id="menu">
+<a style="cursor: context-menu" onclick="go_full_screen();">全屏</a><br>
+<a style="cursor: context-menu" onclick="location.href='../../'">退出</a><br>
+<a style="cursor: context-menu" onclick="document.getElementById('menu').style.display='none'">关闭菜单</a>
+</div>
+<!--No Refresh-->
+<script id="pjax">
+  var pjax = new Pjax({
+  selectors: [
+    "title",
+    ".content",
+  ],
+  switches: {
+    ".content": Pjax.switches.sideBySide
+  },
+  switchesOptions: {
+    ".content": {
+      classNames: {
+        // class added to the old element being replaced, e.g. a fade out
+        remove: "roll-out-blurred-left",
+        // class added to the new element that is replacing the old one, e.g. a fade in
+        add: "roll-in-blurred-right",
+		// class added on the element when navigating back
+        backward: "fade-in",
+        // class added on the element when navigating forward (used for new page too)
+        forward: "fade-in"
+      },
+      callbacks: {
+        // to make a nice transition with 2 pages at the same time
+        // we are playing with absolute positioning for the element we are removing
+        // & we need live metrics to have something great
+        // see associated CSS below
+        removeElement: function(el) {
+          el.style.marginLeft = "-" + (el.getBoundingClientRect().width/2) + "px"
+        }
+      }
+    }
+  },
+  cacheBust: false
+})
+</script>
+</body>
+</html>

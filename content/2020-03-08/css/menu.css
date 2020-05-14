@@ -1,0 +1,13 @@
+* {
+margin: 0;
+padding: 0;
+}
+.menu {
+width: 100px;
+border: 1px solid #ccc;
+position: absolute;
+box-shadow: 0 0 5px rgba(0,0,0,.2);
+padding: 10px 0;
+transition: all .1s ease;  
+text-align: center;     
+}

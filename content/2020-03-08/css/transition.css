@@ -1,0 +1,178 @@
+.fade-in {
+	animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slide-out-elliptic-top-bck {
+	animation: slide-out-elliptic-top-bck 0.7s ease-out both;
+}
+@keyframes slide-out-elliptic-top-bck {
+  0% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+.slide-in-elliptic-top-bck {
+	animation: slide-in-elliptic-top-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-elliptic-top-bck {
+  0% {
+    transform: translateY(-600px) rotateX(30deg) scale(6.5);
+    transform-origin: 50% 200%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% -500px;
+    opacity: 1;
+  }
+}
+.roll-out-blurred-left {
+	animation: roll-out-blurred-left 0.65s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+}
+@keyframes roll-out-blurred-left {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+}
+.roll-in-blurred-right {
+	animation: roll-in-blurred-right 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@keyframes roll-in-blurred-right {
+  0% {
+    transform: translateX(1000px) rotate(720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.puff-in-center {
+	animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.sanjiaoxing{
+    border-top: 50px solid black;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+.roundedRectangle{
+	background-color: rgba(255,255,255,0.5);
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 60px;
+}
+.glow {
+  color: black;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px red, 0 0 30px yelow, 0 0 40px blue, 0 0 50px green, 0 0 60px yellow, 0 0 70px red;
+  }
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px yellow, 0 0 40px blue, 0 0 50px green, 0 0 60px blue, 0 0 70px yellow, 0 0 80px red;
+  }
+}
+.tracking-in-contract-bck {
+	animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.dialogue {
+    width: 25vw;
+    height: 25vw;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: fixed;
+}
+.fade-in2 {
+	animation: fade-in 3s linear 0.5s both;
+}
+.fade-in3 {
+	animation: fade-in 3s linear 2.5s both;
+}
+.fade-in4 {
+	animation: fade-in 3s linear 4.5s both;
+}
+.slide-in-elliptic-bottom-bck {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-in-elliptic-bottom-bck2 {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+.slide-in-elliptic-bottom-bck3 {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+.slide-in-elliptic-bottom-bck4 {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+}
+.slide-in-elliptic-bottom-bck5 {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+.slide-in-elliptic-bottom-bck6 {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+}
+.slide-in-elliptic-bottom-bck7 {
+	animation: slide-in-elliptic-bottom-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+}
+@keyframes slide-in-elliptic-bottom-bck {
+  0% {
+    transform: translateY(600px) rotateX(-30deg) scale(6.5);
+    transform-origin: 50% -100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 500px;
+    opacity: 1;
+  }
+}

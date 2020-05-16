@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/multilang.js"></script>
+<title>Your browser is not supported</title>
+<script type="text/javascript">
+　　var type = navigator.appName;
+　　if (type == "Netscape"){
+    　　var lang = navigator.language;
+　　}else{
+    　　var lang = navigator.userLanguage;
+　　};
+　　var lang = lang.substr(0, 2);
+　　if (lang == "zh"){
+   　　 changetozh();
+　　}else if (lang == "en"){
+   　　 changetoen();
+　　};
+</script>
+</head>
+<body>
+<div id="ie" style="position: fixed; top:0; left: 0; bottom: 0; right: 0; background-color: grey; color: white; z-index: 9005; overflow:auto">
+<h1 style="font-size: 8vw; vertical-align: middle">:( oops!</h1><br><div style="transition: all 1s" class="en"><h2 style="font-size: 2vw; vertical-align: middle; float: left">You are using <div style="float: left; height: 2vw; width: 2vw"></div> <h2 style="font-size: 2vw; vertical-align: middle; float: left; transition: all 1s">&nbsp;Microsoft Internet Explorer that we don't support!</h2></h2></div><br>
+<div style="display: none; transition: all 1s" class="zh"><h2 style="font-size: 2vw; vertical-align: middle; float: left">您正使用不受支持的浏览器（ <div style="float: left; height: 2vw; width: 2vw"></div> <h2 style="font-size: 2vw; vertical-align: middle; float: left">Microsoft Internet Explorer ）！</h2></h2></div><br>
+<br><br><br><h3 class="en" style="clear: both; transition: all 1s">Please download these browsers instead:</h3><br>
+<h3 class="zh" style="clear: both; display: none; transition: all 1s">请使用以下浏览器：</h3><br>
+<a href="https://www.google.cn/chrome/" target="_blank"><img style="vertical-align: middle" src="images/gc1.jpg" /><img style="vertical-align: middle" src="images/gc3.png" height="32px" width="32px"/><img style="vertical-align: middle" src="images/gc2.jpg" /></a>(Recommend)
+<br>or<br>
+<a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank"><img src="images/ffb.png" /></a>
+<br>or</br>
+<a href="https://www.opera.com/zh-cn" target="_blank"><img src="images/opera.png" /></a>
+<br>or<br>
+<a href="https://www.microsoft.com/zh-cn/edge" target="_blank"><img style="vertical-align: middle" height="64px" src="images/edge_new.jfif" alt="Microsoft Edge" /><font style="font-family: 微软雅黑">Microsoft Edge(Chromium)</font></a>
+<br>or</br>
+<a href="microsoft-edge://"><img style="vertical-align: middle" src="images/edge_legacy.svg" height="32px" width="32px" /><font style="font-family: 微软雅黑">Microsoft Edge Legacy</font>(not recommend)</a>
+<br>or<br>
+<p style="transition: all 1s" class="en">Other browsers based on <a href="https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium" target="_blank">Chromium</a></p>
+<p style="display: none; transition: all 1s" class="zh">其它<a href="https://baike.baidu.com/item/chromium/529755?fr=aladdin#1" target="_blank">基于 Chromium 的浏览器</a>, 如百度浏览器、QQ 浏览器、360安全(极速)浏览器等</p>
+<br><br><br>
+<h3 style="transition: all 1s" class="en">I have downloaded one of the browsers and installed it, what should I do next?</h3>
+<h3 class="zh" style="display: none; transition: all 1s">我已经下载并安装了它们，接下来怎么办</h3>
+<p>Click the link below to open the browser</p><br>
+<a href="ChromeHTML:// xn--13-7p3d566eg3h8k0a.jeansou.com"><img src="images/gc2.jpg" /></a>
+<br><br>
+<a href="FirefoxURL-E7CF176E110C211B:// xn--13-7p3d566eg3h8k0a.jeansou.com"><img src="images/ffb.png" /></a>
+<br><br>
+<a href="OperaStable:// xn--13-7p3d566eg3h8k0a.jeansou.com"><img src="images/opera.png" /></a>
+<br><br>
+<a href="microsoft-edge:// xn--13-7p3d566eg3h8k0a.jeansou.com" style="font-family: '微软雅黑'">Microsoft Edge</a>
+</div>
+<div onclick="changetozh();" class="cl" style="cursor: pointer; position: fixed; right: 1%; bottom: 1%; font-size: 1vw; color: blue; z-index: 9998; background-color: gray">简体中文</div>
+<div onclick="changetoen();" class="cl2" style="cursor: pointer; position: fixed; right: 1%; bottom: 1%; font-size: 1vw; color: blue; z-index: 9999; display: none">English</div>
+</body>
+</html>

@@ -1,3 +1,2 @@
-# Timeline-of-Class-13
-Source code of Class 13 timeline website<br>
-This is a static website not a dynamic one
+# 13 班记录站部分源码
+used with jsDelivr

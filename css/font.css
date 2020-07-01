@@ -1,5 +1,5 @@
 @font-face{
 	font-family: "Minecraft";
-	src: url("../fonts/MINECRAFT.TTF") format("truetype");
+	src: url("https://cdn.jsdelivr.net/gh/JeansouLiu/Class-13/fonts/MINECRAFT.TTF") format("truetype");
 	font-display: swap;
 }

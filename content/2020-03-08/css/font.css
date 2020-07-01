@@ -1,20 +1,20 @@
 @font-face{
 	font-family: "Zhi Mang Xing";
-	src: url("../fonts/ZhiMangXing-Regular.ttf") format("truetype");
+	src: url("https://cdn.jsdelivr.net/gh/JeansouLiu/Class-13/content/2020-03-08/fonts/ZhiMangXing-Regular.ttf") format("truetype");
 	font-display: swap;
 }
 @font-face{
 	font-family: "Product Sans";
-	src: url("../fonts/ProductSans-Regular.ttf");
+	src: url("https://cdn.jsdelivr.net/gh/JeansouLiu/Class-13/content/2020-03-08/fonts/ProductSans-Regular.ttf");
 	font-display: swap;
 }
 @font-face{
 	font-family: "Product Sans Bold";
-	src: url("../fonts/ProductSans-Bold.ttf");
+	src: url("https://cdn.jsdelivr.net/gh/JeansouLiu/Class-13/content/2020-03-08/fonts/ProductSans-Bold.ttf");
 	font-display: swap;
 }
 @font-face{
 	font-family: "Product Sans Italic";
-	src: url("../fonts/ProductSans-Italic.ttf");
+	src: url("https://cdn.jsdelivr.net/gh/JeansouLiu/Class-13/content/2020-03-08/fonts/ProductSans-Italic.ttf");
 	font-display: swap;
 }

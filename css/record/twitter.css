@@ -128,7 +128,7 @@ th {
 	border: 1px solid #e6ecf0;
 }
 .bigimg{
-	background-image: url('https://cdn.jsdelivr.net/gh/JeansouLiu/Class-13/images/record/bigimg/bigimg.jpg');
+	background-image: url('https://api.imlazy.ink/img/');
 	height: 337px;
 	width: 98%;
 	background-position: center;

@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
   }
     if (window.Notification && Notification.permission === "granted") {
 	  var img = 'img/favicon.ico';
-      var notification = new Notification('13班记录站', { body: '欢迎访问本站', icon: img });
+      var notification = new Notification('13班记录站', { body: '眼里有事 心中有光', icon: img });
     }
     else if (window.Notification && Notification.permission !== "denied") {
       Notification.requestPermission(function (status) {
@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
         }
         if (status === "granted") {
           var img = 'img/favicon.ico';
-          var notification = new Notification('13班记录站', { body: '欢迎访问本站', icon: img });
+          var notification = new Notification('13班记录站', { body: '眼里有事 心中有光', icon: img });
         }
       });
     }

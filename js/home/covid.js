@@ -4,7 +4,7 @@
 function global() {
     $.ajax({
         type: "get",
-        url: 'summary.json',
+        url: 'https://api.covid19api.com/summary',
         data: {},
         async: false,
         dataType: 'json',
